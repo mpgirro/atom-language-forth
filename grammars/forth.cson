@@ -123,11 +123,11 @@
         'name': 'keyword.other.immediate.forth'
       }
       {
-        'match': '(?<=^|\\s)\\[(?i:(F+|F-|F\\*|F\\*\\*|FSQRT|F\\/|F\\.S))\\](?=\\s)'
+        'match': '(?<=^|\\s)\\[(?i:(F\+|F-|F\*|F\*\*|FSQRT|F/|F\.S))\\](?=\\s)'
         'name': 'keyword.other.immediate.forth'
       }
       {
-        'match': '(?<=^|\\s)\\[(?i:(EXECUTE|ABORT|CATCH|C@|F@|>R|R>|!))\\](?=\\s)'
+        'match': '(?<=^|\\s)\\[(?i:(EXECUTE|ABORT|CATCH|C@|F@|>R|R>|!|/MOD|MOD))\\](?=\\s)'
         'name': 'keyword.other.immediate.forth'
       }
       {
