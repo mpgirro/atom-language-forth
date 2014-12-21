@@ -1,4 +1,3 @@
-language-forth
-==============
+# Forth language support in Atom
 
-Forth language support in Atom
+Adds syntax highlighting to Forth files in Atom.
