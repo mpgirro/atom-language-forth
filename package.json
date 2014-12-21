@@ -1,6 +1,6 @@
 {
   "name": "language-forth",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Forth language support in Atom",
   "repository": {
     "type": "git",
@@ -19,6 +19,5 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
