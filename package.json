@@ -1,6 +1,6 @@
 {
   "name": "language-forth",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Forth language support in Atom",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/mpgirro/language-forth/issues"
   },
-  "homepage": "https://github.com/mpgirro/language-prolog",
+  "homepage": "https://github.com/mpgirro/language-forth",
   "readme": "# Forth language support in Atom\n\nAdds syntax highlighting to Forth files in Atom.",
   "readmeFilename": "README.md",
   "author": {
