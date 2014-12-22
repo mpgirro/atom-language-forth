@@ -120,15 +120,15 @@
     'patterns': [
       {
         'match': '(?<=^|\\s)\\[(?i:(NIP|TUCK|ROT|SWAP|DUP|OVER|DROP|2SWAP|2DUP|2DROP|FNIP|FTUCK|FROT|FSWAP|FDUP|FOVER|FDROP|F2SWAP|F2DUP|F2DROP))\\](?=\\s)'
-        'name': 'keyword.other.immediate.forth'
+        'name': 'keyword.other.word.forth'
       }
       {
         'match': '(?<=^|\\s)\\[(?i:(F\+|F-|F\*|F\*\*|FSQRT|F/|F\.S))\\](?=\\s)'
-        'name': 'keyword.other.immediate.forth'
+        'name': 'keyword.other.word.forth'
       }
       {
         'match': '(?<=^|\\s)\\[(?i:(EXECUTE|ABORT|CATCH|C@|F@|>R|R>|!|/MOD|MOD))\\](?=\\s)'
-        'name': 'keyword.other.immediate.forth'
+        'name': 'keyword.other.word.forth'
       }
       {
         'match': '(?<=^|\\s)\\[(?i:(\\?DO|\\+LOOP|AGAIN|BEGIN|DEFINED|DO|ELSE|ENDIF|FOR|IF|IFDEF|IFUNDEF|LOOP|NEXT|REPEAT|THEN|UNTIL|WHILE))\\](?=\\s)'
@@ -136,7 +136,7 @@
       }
       {
         'match': '(?<=^|\\s)(?i:(COMPILE-ONLY|IMMEDIATE|IS|RESTRICT|TO|WHAT\'S|]))(?=\\s)'
-        'name': 'keyword.other.immediate.forth'
+        'name': 'keyword.operator.immediate.forth'
       }
       {
         'match': '(?<=^|\\s)(?i:(-DO|\\-LOOP|\\?DO|\\?LEAVE|\\+DO|\\+LOOP|ABORT\\"|AGAIN|AHEAD|BEGIN|CASE|DO|ELSE|ENDCASE|ENDIF|ENDOF|ENDTRY\\-IFERROR|ENDTRY|FOR|IF|IFERROR|LEAVE|LOOP|NEXT|RECOVER|REPEAT|RESTORE|THEN|TRY|U\\-DO|U\\+DO|UNTIL|WHILE))(?=\\s)'
@@ -164,6 +164,8 @@
         'name': 'entity.name.function.forth'
       '3':
         'name': 'keyword.other.compile-only.forth'
+      '4':
+        'name': 'keyword.other.word.forth'
     'end': '(;(?i:CODE)?)'
     'endCaptures':
       '0':
