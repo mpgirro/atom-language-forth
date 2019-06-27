@@ -4,12 +4,12 @@
   "description": "Forth language support in Atom",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpgirro/language-forth"
+    "url": "https://github.com/mpgirro/atom-language-forth"
   },
   "bugs": {
-    "url": "https://github.com/mpgirro/language-forth/issues"
+    "url": "https://github.com/mpgirro/atom-language-forth/issues"
   },
-  "homepage": "https://github.com/mpgirro/language-forth",
+  "homepage": "https://github.com/mpgirro/atom-language-forth",
   "readme": "# Forth language support in Atom\n\nAdds syntax highlighting to Forth files in Atom.",
   "readmeFilename": "README.md",
   "author": {
