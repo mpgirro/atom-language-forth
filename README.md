@@ -1,7 +1,7 @@
-# Forth language support in Atom
+# Forth language support for Atom
 
-Adds syntax highlighting to Forth files in [Atom](https://atom.io).
+Syntax highlightning for the [Forth programming language](https://en.wikipedia.org/wiki/Forth_(programming_language)) to the [Atom editor](https://atom.io).
 
-Install it via the Settings Pane or by using the Atom Package Manager:
+Install this package via the Settings Pane or by using the Atom Package Manager:
 
     apm install language-forth

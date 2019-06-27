@@ -1,7 +1,7 @@
 {
   "name": "language-forth",
   "version": "0.2.5",
-  "description": "Forth language support in Atom",
+  "description": "Forth language support for Atom",
   "repository": {
     "type": "git",
     "url": "https://github.com/mpgirro/atom-language-forth"
@@ -10,7 +10,7 @@
     "url": "https://github.com/mpgirro/atom-language-forth/issues"
   },
   "homepage": "https://github.com/mpgirro/atom-language-forth",
-  "readme": "# Forth language support in Atom\n\nAdds syntax highlighting to Forth files in Atom.",
+  "readme": "# Forth language support for Atom\n\nAdds syntax highlighting for Forth files to Atom.",
   "readmeFilename": "README.md",
   "author": {
     "name": "Maximilian Irro"
