@@ -44,8 +44,9 @@
         'name': 'comment.block.documentation.forth'
       }
       {
+        'begin': '(?<=^|\\s)\\(\\s'
         'comment': 'ANSI line comment'
-        'match': '(?<=^|\\s)(\\.?\\( [^)]*\\))'
+        'end': '\\)'
         'name': 'comment.line.parentheses.forth'
       }
     ]
@@ -87,13 +88,20 @@
       {
         'include': '#word-def'
       }
+      {
+        'include': '#code-def'
+      }
     ]
   'storage':
     'patterns': [
       {
         'comment': ''
-        'match': '(?<=^|\\s)(?i:(2CONSTANT|2VARIABLE|ALIAS|CONSTANT|CREATE-INTERPRET/COMPILE[:]?|CREATE|DEFER|FCONSTANT|FIELD|FVARIABLE|USER|VALUE|VARIABLE|VOCABULARY))(?=\\s)'
-        'name': 'storage.type.forth'
+        'match': '(?<=^|\\s)(?i:(2CONSTANT|2VARIABLE|ALIAS|CONSTANT|CREATE-INTERPRET/COMPILE[:]?|CREATE|DEFER|FCONSTANT|FIELD|FVARIABLE|USER|VALUE|VARIABLE|VOCABULARY))\\s+(\\S+)(?=\\s)'
+        'captures':
+          '1':
+            'name': 'storage.type.forth'
+          '2':
+            'name': 'entity.name.function.forth'
       }
     ]
   'string':
@@ -112,7 +120,7 @@
   'variable':
     'patterns': [
       {
-        'match': '\\b(?i:I|J)\\b'
+        'match': '\\b(?i:I|J|K)\\b'
         'name': 'variable.language.forth'
       }
     ]
@@ -166,7 +174,41 @@
         'name': 'keyword.other.compile-only.forth'
       '4':
         'name': 'keyword.other.word.forth'
-    'end': '(;(?i:CODE)?)'
+    'end': '(?<=^|\\s)(;(?i:CODE)?)(?=\\s)'
+    'endCaptures':
+      '0':
+        'name': 'keyword.other.compile-only.forth'
+    'name': 'meta.block.forth'
+    'patterns': [
+      {
+        'include': '#constant'
+      }
+      {
+        'include': '#comment'
+      }
+      {
+        'include': '#string'
+      }
+      {
+        'include': '#word'
+      }
+      {
+        'include': '#variable'
+      }
+      {
+        'include': '#storage'
+      }
+    ]
+  'code-def':
+    'begin': '(^code|\\scode)\\s(\\S+)\\s'
+    'beginCaptures':
+      '1':
+        'name': 'keyword.other.compile-only.forth'
+      '2':
+        'name': 'entity.name.function.forth'
+      '3':
+        'name': 'keyword.other.word.forth'
+    'end': '(?<=^|\\s)(end-code)(?=\\s)'
     'endCaptures':
       '0':
         'name': 'keyword.other.compile-only.forth'
