@@ -112,7 +112,7 @@
   'variable':
     'patterns': [
       {
-        'match': '\\b(?i:I|J)\\b'
+        'match': '\\b(?i:I|J|K)\\b'
         'name': 'variable.language.forth'
       }
     ]
