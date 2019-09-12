@@ -92,8 +92,12 @@
     'patterns': [
       {
         'comment': ''
-        'match': '(?<=^|\\s)(?i:(2CONSTANT|2VARIABLE|ALIAS|CONSTANT|CREATE-INTERPRET/COMPILE[:]?|CREATE|DEFER|FCONSTANT|FIELD|FVARIABLE|USER|VALUE|VARIABLE|VOCABULARY))(?=\\s)'
-        'name': 'storage.type.forth'
+        'match': '(?<=^|\\s)(?i:(2CONSTANT|2VARIABLE|ALIAS|CONSTANT|CREATE-INTERPRET/COMPILE[:]?|CREATE|DEFER|FCONSTANT|FIELD|FVARIABLE|USER|VALUE|VARIABLE|VOCABULARY))\\s+(\\S+)(?=\\s)'
+        'captures':
+          '1':
+            'name': 'storage.type.forth'
+          '2':
+            'name': 'entity.name.function.forth'
       }
     ]
   'string':
