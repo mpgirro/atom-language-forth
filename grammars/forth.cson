@@ -44,8 +44,9 @@
         'name': 'comment.block.documentation.forth'
       }
       {
+        'begin': '(?<=^|\\s)\\(\\s'
         'comment': 'ANSI line comment'
-        'match': '(?<=^|\\s)(\\.?\\( [^)]*\\))'
+        'end': '\\)'
         'name': 'comment.line.parentheses.forth'
       }
     ]
