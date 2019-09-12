@@ -87,6 +87,9 @@
       {
         'include': '#word-def'
       }
+      {
+        'include': '#code-def'
+      }
     ]
   'storage':
     'patterns': [
@@ -167,6 +170,40 @@
       '4':
         'name': 'keyword.other.word.forth'
     'end': '(;(?i:CODE)?)'
+    'endCaptures':
+      '0':
+        'name': 'keyword.other.compile-only.forth'
+    'name': 'meta.block.forth'
+    'patterns': [
+      {
+        'include': '#constant'
+      }
+      {
+        'include': '#comment'
+      }
+      {
+        'include': '#string'
+      }
+      {
+        'include': '#word'
+      }
+      {
+        'include': '#variable'
+      }
+      {
+        'include': '#storage'
+      }
+    ]
+  'code-def':
+    'begin': '(^code|\\scode)\\s(\\S+)\\s'
+    'beginCaptures':
+      '1':
+        'name': 'keyword.other.compile-only.forth'
+      '2':
+        'name': 'entity.name.function.forth'
+      '3':
+        'name': 'keyword.other.word.forth'
+    'end': '(?<=^|\\s)(end-code)(?=\\s)'
     'endCaptures':
       '0':
         'name': 'keyword.other.compile-only.forth'
