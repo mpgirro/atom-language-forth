@@ -166,7 +166,7 @@
         'name': 'keyword.other.compile-only.forth'
       '4':
         'name': 'keyword.other.word.forth'
-    'end': '(;(?i:CODE)?)'
+    'end': '(?<=^|\\s)(;(?i:CODE)?)(?=\\s)'
     'endCaptures':
       '0':
         'name': 'keyword.other.compile-only.forth'
