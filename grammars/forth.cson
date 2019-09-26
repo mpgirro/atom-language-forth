@@ -3,7 +3,8 @@
   'fth'
   'fs'
   '4th'
-  'forth'
+  'forth',
+  'f'
 ]
 'foldingStartMarker': '/\\*\\*|\\{\\s*$'
 'foldingStopMarker': '\\*\\*/|^\\s*\\}'
