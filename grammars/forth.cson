@@ -144,7 +144,7 @@
         'name': 'keyword.control.immediate.forth'
       }
       {
-        'match': '(?<=^|\\s)(?i:(COMPILE-ONLY|IMMEDIATE|IS|RESTRICT|TO|WHAT\'S|]))(?=\\s)'
+        'match': '(?<=^|\\s)(?i:(IS|TO|WHAT\'S|]))(?=\\s)'
         'name': 'keyword.operator.immediate.forth'
       }
       {
